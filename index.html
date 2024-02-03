@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>   <!--  Boxicons -> usage -> usage as font -->
+    <link rel="stylesheet" href="designPage.css">
+    <link rel="stylesheet" href="codePage.css">
+    <script src="weatherJS.js"></script>
+    <title>weather</p></title>
+</head>
+<body>
+
+  <!-- --------------------------------------------------------------------------------------------------- -->
+  <!-- ------------------------------------  NavBAr  ------------------------------------------------------ -->
+    <div id="nav">
+      <img src="img/iconImg.jpg" alt="img">
+      <a href="#">HOME</a>
+      <a id="live" href="#page2">Current Location</a>
+      <a href="#page2"><form id="search"> <input type="search" placeholder="Search"> </form></a>
+      <a href="#about-us">About</a>
+      <a href="Login.html">Account</a>
+    </div>      
+    
+    <!-- <div id="cursor"></div>
+    <div id="cursor-blur"></div> -->
+
+    <video autoplay loop muted src="img/bgVideo.mp4"></video>   
+    <div id="main">
+      <!-- --------------------------------------------------------------------------------------------------- -->
+      <!-- ------------------------------------  Page1  ------------------------------------------------------ -->
+        <div id="page1">
+            <h1>myWeather</h1>
+            <h2>AFTER RAIN COMES THE FAIR WEATHER</h2>
+            <p>
+                For the man sound of body and serene of mind there is no such thing as bad weather. Every day has its beauty, and orms which whip the blood do but make it pulse more vigorously.
+            </p>
+            <div id="arrow">
+              <a href="#arrow"><i class="ri-arrow-down-line">↓ </i></a>
+            </div>
+          </div>
+    <!-- ------------------------------------  Page1.5  ------------------------------------------------------ -->
+        <div id="page1Down">
+          <h1>WHERE ARE YOU LOOKING FOR?</h1>
+        </div>
+    <!-- --------------------------------------------------------------------------------------------------- -->
+    <!-- ------------------------------------  Page2  ------------------------------------------------------ -->
+      <div id="page2">
+        <h1 id="country">Country</h1>
+        <h1 id="state">State</h1>
+        <h1 id="city">City</h1>
+        <div class="elementt">
+          <img src="https://s.w-x.co/util/image/v/1680371453600_0401_National_WKD_Editproxy.jpg?v=ap&w=980&h=551"alt="" />
+        </div>
+        <div class="elementt">
+          <img src="https://pbs.twimg.com/media/GCmu6prasAA76fy.jpg"alt="" />
+        </div>
+        <div class="elementt">
+          <img src="https://thumbs.dreamstime.com/z/states-india-selective-focus-map-rajasthan-state-272831163.jpg" alt=""/>
+        </div>
+        </div>
+
+
+    <!-- --------------------------------------------------------------------------------------------------- -->
+    <!-- ------------------------------------  Page3  ------------------------------------------------------ -->
+
+
+    <!-- /* ************************************************************************ */ -->
+        
+    
+    <div id="page3" id="searchh">
+      <div class="weatherContainer">
+
+        <div class="searchBox">
+            <i class='bx bxs-map' ></i>                    <!--  Boxicons -> search_desied and select -> copy font --> 
+            <input id="placeHolder" type="text" placeholder="Enter your Location">
+            <span id="cityName"></span>
+            <button class="bx bx-search-alt-2"></button>
+        </div>
+        
+        <div class="notification"> </div>
+        <div class="weatherBox">
+            <div class="box">
+                <div class="infoWeather">
+                    <div class="weather">
+                        <img id="weatherIMG" src="img/cloud.png">
+                        <p class="temprature">0<span>°C</span></p>
+                        <p class="description">Broken Cloud</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="weatherDeatils">
+            <div class="humidity">
+                <i class='bx bx-water' ></i>
+                <div class="text">
+                    <div class="infoHumidityy"><span id="infoHumidity">0%</span></div>
+                    <p>Humidity</p>
+
+                </div>
+            </div>
+            <div class="wind">
+                <i class='bx bx-wind' ></i>
+                <div class="text">
+                    <div class="infoWindd"><span id="infoWind">0 Km/hr</span></div>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="notFound">
+            <div class="notFoundbox">
+                <img src="404.png"> 
+                <p>OOPS! Location not Found</p>
+            </div>
+        </div>
+
+    </div>     
+  </div>
+
+    
+    <!-- /* ************************************************************************ */ -->
+
+    <!-- --------------------------------------------------------------------------------------------------- -->
+    <!-- ------------------------------------  Page4  ------------------------------------------------------ -->
+
+        <div id="page4">
+            <p>I have seen many storms in my life. Most storms have caught me by surprise, so I had to learn very quickly to look further and understand that I am not capable of controlling the weather, to exercise the art of patience and to respect the fury of nature. </p>
+            <img id="colon1" src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/quote-left.svg" alt=""/>
+            <img id="colon2" src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/quote-right.svg" alt=""/>
+          </div>
+
+          <div id="about-us">
+            <img src="https://s.w-x.co/in-Tuesday_June_6.jpg" alt="img1" />
+            <div id="about-us-in">
+              <h3>ABOUT</h3>
+              <p> Our weather website is a reliable source for up-to-date and accurate weather information. From temperature forecasts to humidity levels, we provide comprehensive details to help users plan their day. Our user-friendly interface ensures easy navigation, while our commitment to precision ensures reliable data. Whether you're checking the weather for your city or exploring forecasts for different locations, trust our platform to deliver trustworthy meteorological insights. Stay informed and make weather-informed decisions with our dedicated weather services. </p>
+            </div>
+            <img src="https://s.w-x.co/util/image/w/in-May_23_rain.jpg?v=at&w=532&h=532" alt="" />
+          </div>
+
+     <!-- --------------------------------------------------------------------------------------------------- -->
+    <!-- ------------------------------------  Page5  ------------------------------------------------------ -->
+
+    <div id="page5">
+      <div id="cards-container">
+        <div class="card" id="card1"> </div>
+        <div class="card" id="card2"> </div>
+        <div class="card" id="card3"> </div>
+      </div>  
+    </div>
+          
+    <!-- --------------------------------------------------------------------------------------------------- -->
+    <!-- ------------------------------------  Footer  ------------------------------------------------------ -->
+            <footer>
+              <div class="leftFooter"> 
+                  <p>Download apps for IOS and Android</p>
+                  <img src="img/Store.png" alt="Store">
+              </div>
+              <div class="midFooter">
+                  <h1>myWeather</h1>
+                  <p>The sole reason we are in business is to make life less difficult for our clients.</p>
+                  <p>Copyrigths &copy; Ujjawal Singh</p>
+
+              </div>
+              <div class="rightFooter">
+                  <h3><u>Customer Policies</u></h3>
+                  <div>FAQ</div>
+                  <div>Contact Us</div>
+                  <div>Terms of Use</div>
+                  <div>Privacy Policy</div>
+                  <div>Grievance Officer</div>
+              </div>
+
+          </footer>
+          
+    </div>
+
+    
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"
+      integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js"
+      integrity="sha512-IHDCHrefnBT3vOCsvdkMvJF/MCPz/nBauQLzJkupa4Gn4tYg5a6VGyzIrjo6QAUy3We5HFOZUlkUpP0dkgE60A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="pageFeature.js"></script>
+    <script src="weatherFetchCode.js"></script>
+
+</body>
+</html>
